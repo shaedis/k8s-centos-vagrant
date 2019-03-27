@@ -5,13 +5,13 @@ $token = "abcdef.0123456789abcdef"
 $master_memory = 6000
 
 # Increment to have more nodes
-$worker_count = 0
+$worker_count = 2 #0
 
 # Total memory of nodes
 $worker_memory = 1536
 
 # Add Grafana with InfluxDB (work with heapster)
-$grafana = false
+$grafana = true #false
 
 # Cluster IP Addresses
 $cluster_ips = "192.168.56.224/28"
@@ -24,4 +24,4 @@ $metallb = true
 $ingress_controller = "nginx"
 
 # Deploy Prometheus
-$prometheus = false
+$prometheus = true #false
