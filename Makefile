@@ -24,7 +24,8 @@ status:      ## Get Cluster Status
 load:        ## Load KUBECONFIG for the Cluster
 	@KUBECONFIG=$(shell pwd)/.kube/config bash
 
-create: 
+create:
+	vagrant plugin install vagrant-vbguest 
 	@cd vagrant/$(base) && vagrant up
 
 up: create load    ## Up Cluster
